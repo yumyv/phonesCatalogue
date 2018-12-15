@@ -38,7 +38,7 @@ window.addEventListener("load", function () {
       value: function asElement() {
         var phone = document.createElement("div");
         phone.className = "phone";
-        phone.innerHTML = "\n                    <img src=\"".concat(this.imageUrl, "\" alt=\"phone\">\n                    <button class=\"detailsBtn\">details</button>\n                ");
+        phone.innerHTML = "\n                    <img src=\"".concat(this.imageUrl, "\" alt=\"phone\">\n                    <button class=\"detailsBtn\">Details</button>\n                ");
         this.phonesSelector.appendChild(phone);
         return phone;
       }
@@ -164,13 +164,13 @@ window.addEventListener("load", function () {
 
         var phoneInfo = document.createElement("div");
         phoneInfo.className = "phoneInfo";
-        var phoneInfoElement = "\n                    <div class=\"dillerInfo\">\n                        <p style=\"font-weight: bold\">diller: </p>\n                        <p style=\"text-align: right\">".concat(this.phones[index].diller, "</p>\n                    </div>\n                    <div class=\"modelInfo\">\n                        <p style=\"font-weight: bold\">model: </p>\n                        <p style=\"text-align: right\">").concat(this.phones[index].model, "</p>\n                    </div>\n                    <div class=\"batteryInfo\">\n                        <p style=\"font-weight: bold\">battery: </p>\n                        <p style=\"text-align: right\">").concat(this.phones[index].battery, "</p>\n                    </div>\n                </div>\n            ");
+        var phoneInfoElement = "\n                    <div class=\"dillerInfo\">\n                        <p style=\"font-weight: bold\">Diller: </p>\n                        <p style=\"text-align: right\">".concat(this.phones[index].diller, "</p>\n                    </div>\n                    <div class=\"modelInfo\">\n                        <p style=\"font-weight: bold\">Model: </p>\n                        <p style=\"text-align: right\">").concat(this.phones[index].model, "</p>\n                    </div>\n                    <div class=\"batteryInfo\">\n                        <p style=\"font-weight: bold\">Battery: </p>\n                        <p style=\"text-align: right\">").concat(this.phones[index].battery, "</p>\n                    </div>\n                </div>\n            ");
         phoneInfo.innerHTML = phoneInfoElement;
         phoneHeader.appendChild(phoneInfo); //add description
 
         var descriptionInfo = document.createElement("div");
         descriptionInfo.className = "descriptionInfo";
-        var descriptionInfoElement = "\n                <p style=\"font-weight: bold\">description: </p>\n                <p>".concat(this.phones[index].description, "</p>\n            ");
+        var descriptionInfoElement = "\n                <p style=\"font-weight: bold\">Description: </p>\n                <p>".concat(this.phones[index].description, "</p>\n            ");
         descriptionInfo.innerHTML = descriptionInfoElement; //add all
 
         this.description.appendChild(phoneHeader);
