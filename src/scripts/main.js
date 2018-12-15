@@ -14,7 +14,7 @@ window.addEventListener("load", function () {
             phone.className = "phone";
             phone.innerHTML = `
                     <img src="${this.imageUrl}" alt="phone">
-                    <button class="detailsBtn">details</button>
+                    <button class="detailsBtn">Details</button>
                 `;
             this.phonesSelector.appendChild(phone);
             return phone;
@@ -109,15 +109,15 @@ window.addEventListener("load", function () {
             phoneInfo.className = "phoneInfo";
             let phoneInfoElement = `
                     <div class="dillerInfo">
-                        <p style="font-weight: bold">diller: </p>
+                        <p style="font-weight: bold">Diller: </p>
                         <p style="text-align: right">${this.phones[index].diller}</p>
                     </div>
                     <div class="modelInfo">
-                        <p style="font-weight: bold">model: </p>
+                        <p style="font-weight: bold">Model: </p>
                         <p style="text-align: right">${this.phones[index].model}</p>
                     </div>
                     <div class="batteryInfo">
-                        <p style="font-weight: bold">battery: </p>
+                        <p style="font-weight: bold">Battery: </p>
                         <p style="text-align: right">${this.phones[index].battery}</p>
                     </div>
                 </div>
@@ -128,7 +128,7 @@ window.addEventListener("load", function () {
             let descriptionInfo = document.createElement("div");
             descriptionInfo.className = "descriptionInfo";
             let descriptionInfoElement = `
-                <p style="font-weight: bold">description: </p>
+                <p style="font-weight: bold">Description: </p>
                 <p>${this.phones[index].description}</p>
             `;
             descriptionInfo.innerHTML = descriptionInfoElement;
