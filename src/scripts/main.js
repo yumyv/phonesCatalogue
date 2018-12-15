@@ -73,7 +73,6 @@ window.addEventListener("load", function () {
                     let phone = new Phone(
                         this.inputDillerSelector.value, this.inputModelSelector.value, this.inputImgUrlSelector.value, this.inputBatterySelector.value, this.inputDescriptionSelector.value, this.selectorList);
                     this.addPhone(phone);
-                    phone.asElement();
                     //clear inputs
                     this.inputDillerSelector.value = "";
                     this.inputModelSelector.value = "";
@@ -191,5 +190,13 @@ window.addEventListener("load", function () {
     }
 
     let phonesManager = new PhonesManager;
+
+    //test
+    let phone = new Phone(
+        "iPhone", "X", "./images/iPhoneX.png", "2716mAh", "The anniversary iPhone is here. The iPhone X. Or the iPhone 10. The name is as confusing as the product itself is game-changing. Tim Cook's vision finally overwhelmed Steve Jobs ideological remnants. A new dawn for the iPhones has begun, free of the iconic Home key and the notorious screen bezels.", document.querySelector(".phones"));
+    phonesManager.addPhone(phone);
+    phonesManager.updateView();
+    phonesManager.showPhone(0);
+    //////
 
 });

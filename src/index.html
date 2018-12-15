@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="scripts/main.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Phones</title>
+</head>
+<body>
+<main>
+    <section>
+        <article class="addPhone">
+            <div class="addTitle"><h2>Add phone</h2></div>
+            <div class="addBody">
+                <label for="diller">Diller:</label>
+                <input type="text" id="diller">
+                <label for="model">Model:</label>
+                <input type="text" id="model">
+                <label for="image">Image url:</label>
+                <input type="text" id="image">
+                <label for="battery">Battery:</label>
+                <input type="text" id="battery">
+                <label for="desc">Description:</label>
+                <textarea name="desc" id="desc"></textarea>
+            </div>
+            <div class="addButton">
+                <button class="add">Add</button>
+            </div>
+        </article>
+        <article class="phones"></article>
+        <article class="description"></article>
+        <div class="contextMenu">
+            <div class="contextShow contextHover">Show</div>
+            <div class="contextDelete contextHover">Delete</div>
+        </div>
+    </section>
+</main>
+</body>
+</html>
